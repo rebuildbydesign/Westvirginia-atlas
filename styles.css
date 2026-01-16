@@ -162,6 +162,23 @@ html {
     margin-right: 8px;
 }
 
+
+
+
+/* LAYER TOGGLES UPDATE DEC 2025 */
+
+
+#layer-toggle-ui label {
+  display: block;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+#layer-toggle-ui input[type="checkbox"] {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+
 /* MOBILE RESPONSIVE LEGEND STYLES */
 @media (max-width: 700px) {
     #legend {
@@ -286,6 +303,51 @@ html {
     line-height: 1.35;
 }
 
+/* CLOSE BUTTON FOR HIGH-LEVEL FINDINGS JAN 2026 */
+#close-findings {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    color: #000;
+}
+
+#close-findings:hover {
+    color: #a50f15;
+}
+
+
+
+/* INFO BUTTON (SHOWS WHEN FINDINGS CLOSED) */
+#open-findings {
+    position: absolute;
+    top: 140px;
+    left: 19px;
+    z-index: 9998;
+    background: #ffffff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none; /* hidden by default */
+}
+
+#open-findings:hover {
+    background: #000;
+    color: #fff;
+}
+
+
 /* MOBILE RESPONSIVE HIGH-LEVEL FINDINGS */
 @media (max-width: 700px) {
     #highlevel-findings {
@@ -329,5 +391,39 @@ html {
     #rbd-logo-container {
         top: 10px;
         left: 10px;
+    }
+}
+
+
+/* LAYER TOGGLES MOBILE FRIENDLY */
+
+
+@media (max-width: 700px) {
+    #layer-toggle-ui {
+        width: 25vw !important;
+        max-width: 300px !important;
+        min-width: 150px !important;
+        right: 2vw !important;
+        bottom: 12px !important;
+        padding: 7px 9px !important;
+        border-radius: 5px !important;
+        font-size: 12px !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        z-index: 14;
+    }
+
+    #layer-toggle-ui strong {
+        font-size: 0.9em !important;
+        margin-bottom: 6px;
+    }
+
+    #layer-toggle-ui label {
+        font-size: 0.9em !important;
+        margin-bottom: 5px !important;
+    }
+
+    #layer-toggle-ui input[type="checkbox"] {
+        transform: scale(0.9);
+        margin-right: 4px;
     }
 }
