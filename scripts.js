@@ -9,7 +9,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v11',
     center: [-80.4549, 39.1586], // CENTERED ON WEST VIRGINIA
-    zoom: 7,
+    zoom: 6.8,
     minZoom: 5.5
 });
 
